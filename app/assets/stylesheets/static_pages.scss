@@ -14,14 +14,13 @@
 }
 
 body {
-	text-align: center;
-	font-size: 18px;
+	padding-top: 50px;
+	font-size: 20px;
 	font-family:"Roboto";
-	> h1{
-		font-weight: bold;
-	}
 }
-
+h1{
+		text-align: center;
+}
 #about{
 	background-color: #ccc;
 	padding-top: 50px;
