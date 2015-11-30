@@ -17,25 +17,32 @@ body {
 	text-align: center;
 	font-size: 18px;
 	font-family:"Roboto";
-	h1{
+	> h1{
 		font-weight: bold;
 	}
 }
 
 #about{
-	background-color: grey;
+	background-color: #ccc;
+	padding-top: 50px;
 	padding-bottom: 75px;
 }
 
 #experience{
+	background-color: #049cdb;
+	padding-top: 50px;
 	padding-bottom: 75px;
 }
 
 #portfolio{
+	padding-top: 50px;
 	padding-bottom: 75px;
 }
 
 .language{
+	> ul{
+		list-style-type: circle;
+	}
 	text-align: left;
 	font-family: "Helvetica";
 	font-size: 12px;
