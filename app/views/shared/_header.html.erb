@@ -1,11 +1,29 @@
 <div class="container-fluid">
 	<nav class="navbar navbar-fixed-top navbar-inverse">
 	  <ul>
-			<p class="navbar-brand">Eric Rosenberg</p>
-			<p class="navbar-text">About</p>
-			<p class="navbar-text">Experience</p>
-			<p class="navbar-text">Portfolio</p>
-			<p class="navbar-text">Contact</p>
+			<p class="navbar-text">Eric Rosenberg</p>
+			<%= link_to "About","#about", class: "navbar-text smoothScroll" %>
+			<%= link_to "Experience","#experience", class: "navbar-text smoothScroll" %>
+			<%= link_to "Portfilio","#portfolio", class: "navbar-text smoothScroll" %>
+			<%= link_to "Contact","#contact", class: "navbar-text smoothScroll" %>
 		</ul> 
 	</nav>	
 </div>
+
+<!-- Scroll to click -->
+<script>
+	$(function() {
+  $('.smoothScroll').click(function() {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000); // Scroll Speed
+        return false;
+      }
+    }
+  });
+});
+</script>
