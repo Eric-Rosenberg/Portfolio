@@ -101,9 +101,21 @@
 <!-- Begin contact -->
 <div id="contact">
 	<h1>CONTACT</h1>
-	<i class="fa fa-github fa-5x"></i>
-	<i class="fa fa-bitbucket-square fa-5x"></i>
-	<i class="fa fa-envelope fa-5x"></i>
+	<div class="container-fluid">
+		<div class="row">
+			<center>
+			<%= link_to "https://github.com/Eric-Rosenberg" do %>
+    		<i class="fa fa-github fa-5x"></i>
+			<% end %>
+			<%= link_to "#" do %>
+    		<i class="fa fa-bitbucket-square fa-5x"></i>
+			<% end %>
+			<%= mail_to "roseneric15@gmail.com" do %>
+    		<i class="fa fa-envelope fa-5x"></i>
+			<% end %>
+			</center>
+		</div>
+	</div>
 </div>
 
 <!-- End contact -->

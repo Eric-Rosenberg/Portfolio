@@ -68,20 +68,34 @@ h1{
 }
 
 #contact{
+	a {
+	  color: #000000;
+	}
+	a:hover {
+	  color: #FF7A00;
+	  text-decoration: none;
+	}
 	padding-top: 50px;
 	padding-bottom: 75px;
 }
 
 .language{
-	> ul{
-		list-style-type: circle;
+	ul {
+		list-style-type: none;
 	}
+	li {
+  	padding-left: 1.3em ;
+	}
+	li:before {
+	  content: "\f0a4";
+	  font-family: FontAwesome;
+	  display: inline-block;
+	  margin-left: -1.3em;
+	  width: 1.3em;
+	}
+
 	text-align: left;
 	font-family: "Helvetica";
 	font-size: 12px;
 	padding-bottom: 100px;
-}
-
-.glyphicon{
-    font-size: 3.2em;
 }
