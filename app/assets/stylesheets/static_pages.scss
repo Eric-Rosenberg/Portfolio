@@ -15,7 +15,7 @@
 
 html, body {
 	padding-top: 20px;
-	font-size: 25px;
+	font-size: 18px;
 	font-family:"Roboto";
 	height: 100%;
 }
@@ -44,7 +44,7 @@ p{
 }
 
 #name{
-	margin-bottom: 100px;
+	padding-bottom: 100px;
 	&:hover {
 		font-size: 100px;
 		color: #FF7A00;
@@ -58,7 +58,10 @@ p{
 #about{
 	background-color: #247BA0;
 	padding-top: 50px;
-	padding-bottom: 75px;
+	padding-bottom: 300px;
+	p{
+		padding-bottom: 50px;
+	}
 }
 
 #experience{
@@ -67,7 +70,7 @@ p{
 	padding-bottom: 75px;
 }
 
-#portfolio{
+#projects{
 	padding-top: 50px;
 	padding-bottom: 75px;
 }
