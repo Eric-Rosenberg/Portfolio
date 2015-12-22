@@ -7,8 +7,8 @@
 				<p class="animated infinite pulse">ERIC ROSENBERG</p>
 			</div>
 			<center>
-			<i class="fa fa-desktop fa-3x"></i>
-			<i class="fa fa-calculator fa-3x"></i>
+				<i class="fa fa-desktop fa-3x"></i>
+				<i class="fa fa-calculator fa-3x"></i>
 			</center>
 		</div>
 	</div>
@@ -101,20 +101,27 @@
 </div>
 <!-- End Experience -->
 
-<div id="portfolio">
+<div id="projects">
 	<h1>PROJECTS</h1>
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-2"></div>
-				<div class="col-md-5">
+			<div class="col-md-5">
 				<p>UpTetris</p>
-				<%= link_to image_tag("upTetris1.png"), "#", data: {toggle: "modal", target: "#my-modal"} %>
-				</div>
-				<div class="col-md-5">
-					<p>UpTetris 2.0</p>
-				</div>
+				<%= link_to image_tag("upTetris1.png", size:"356x600"), "#", data: {toggle: "modal", target: "#upTetris1"} %>
+			</div>
+			<div class="col-md-5">
+				<p>UpTetris 2.0</p>
+				<%= link_to image_tag("upTetris2.png", size:"356x600"), "#", data: {toggle: "modal", target: "#upTetris2"} %>
+			</div>
 		</div>
-			<p>Salisbury University Internship Website</p>
+	</div>
+	<div class="container-fluid">
+		<div class="row text-center">
+				<p>Salisbury University Internship Website</p>
+				<%= link_to image_tag("internship.png", size:"900x400"), "#", data: {toggle: "modal", target: "#internship"} %>
+			</div>
+		</div>
 	</div>
 </div>
 
@@ -124,15 +131,15 @@
 	<div class="container-fluid">
 		<div class="row">
 			<center>
-			<%= link_to "https://github.com/Eric-Rosenberg" do %>
-    		<i class="fa fa-github fa-5x"></i>
-			<% end %>
-			<%= link_to "#" do %>
-    		<i class="fa fa-bitbucket-square fa-5x"></i>
-			<% end %>
-			<%= mail_to "roseneric15@gmail.com" do %>
-    		<i class="fa fa-envelope fa-5x"></i>
-			<% end %>
+				<%= link_to "https://github.com/Eric-Rosenberg" do %>
+				<i class="fa fa-github fa-5x"></i>
+				<% end %>
+				<%= link_to "https://bitbucket.org/erosenberg1/" do %>
+				<i class="fa fa-bitbucket-square fa-5x"></i>
+				<% end %>
+				<%= mail_to "roseneric15@gmail.com" do %>
+				<i class="fa fa-envelope fa-5x"></i>
+				<% end %>
 			</center>
 		</div>
 	</div>
@@ -141,27 +148,69 @@
 <!-- End contact -->
 
 
+<!-- Modals -->
 
+<!-- UpTetris2 Modal -->
+<div class="modal fade" id="upTetris2" role="dialog">
+	<div class="modal-dialog">
+		<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title">UpTetris</h4>
+			</div>
+			<div class="modal-body">
+				<p><b>Still under active development.</b>UpTetris2 was created a year after UpTetris had been released. We updated the framwork to be compadible with the latest version of android (at the time) as well as improved the engine and database backend. 
+				</p><%= link_to "View On Github", "https://github.com/sdillon1/UpTetris2.0" %>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div> 
+	</div>
+</div>
 
 <!-- UpTetris Modal -->
-<div class="modal fade" id="my-modal" role="dialog">
-  <div class="modal-dialog">
-  
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">UpTetris</h4>
-      </div>
-      <div class="modal-body">
-        <p>UpTetris was created for Android phones as an undergraduate research project. 
-        It implements many basic android concepts and was a good learning experince. 
-        </p><%= link_to "View On Google Play", "https://play.google.com/store/apps/details?id=sean21derrick21tony.uptetris&hl=en" %>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-    
-  </div>
+<div class="modal fade" id="upTetris1" role="dialog">
+	<div class="modal-dialog">
+		<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title">UpTetris2</h4>
+			</div>
+			<div class="modal-body">
+				<p>UpTetris was created for Android phones as an undergraduate research project. 
+					It implements many basic android concepts and was a good learning experince. 
+				</p><%= link_to "View On Google Play", "https://play.google.com/store/apps/details?id=sean21derrick21tony.uptetris&hl=en" %>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div> 
+	</div>
 </div>
+
+<!-- Internship Modal -->
+<div class="modal fade" id="internship" role="dialog">
+	<div class="modal-dialog">
+		<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title">Internship</h4>
+			</div>
+			<div class="modal-body">
+				<p><b>Still under active development.</b>The internship website was created as my capstone computer science project. I used ruby on rails to 
+				construct a fully functioning website for Salisbury University interns. There were multiple user levels as well 
+				as various other features.  
+				</p><%= link_to "View website", "https://dev.pswaydoecode.website" %>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div> 
+	</div>
+</div>
+
+<!-- End Modals -->
