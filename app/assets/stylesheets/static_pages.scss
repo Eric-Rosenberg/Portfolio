@@ -56,7 +56,7 @@ p{
 	}
 }
 #about{
-	background-color: #247BA0;
+	background-color: #70C1B3;
 	padding-top: 50px;
 	padding-bottom: 300px;
 	p{
@@ -65,19 +65,23 @@ p{
 }
 
 #experience{
-	background-color: #70C1B3;
+	background-color: #E7E7E7;
 	padding-top: 50px;
 	padding-bottom: 75px;
 }
 
 #projects{
 	padding-top: 50px;
+	background-color: #E76B6B;
 	img{
 		margin-bottom: 100px;
 	}
 }
 
 #contact{
+	background-color: #42729B;
+	padding-top: 50px;
+	padding-bottom: 20px;
 	a {
 	  color: #000000;
 	}
@@ -85,8 +89,6 @@ p{
 	  color: #FF7A00;
 	  text-decoration: none;
 	}
-	padding-top: 50px;
-	padding-bottom: 20px;
 }
 
 .language{
